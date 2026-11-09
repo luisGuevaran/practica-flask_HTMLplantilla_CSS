@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+       <h1>Sistema de cálculo de gasolina</h1>
+        <form action="/ejercicio5" method="post">
+        <label for="">cantidad de kilomentros a recorrer</label>
+        <input type="number" name="ck" placeholder="ingrese los km que desea recorrer" required> <br>
+       <input type="submit" value="litros de gasolina necesarios">
+
+      </form>
+      
+      {% if mensaje%}
+        <h1>{{ mensaje }}</h1>
+
+        {% endif %}
+{% endblock %}

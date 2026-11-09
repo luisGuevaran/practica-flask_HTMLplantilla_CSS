@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+        <h1>Sitema de registro de botellas Brunch Doña Martha</h1>
+        <form action="/ejercicio3" method="post">
+        <label for="">cantidad de cajas de refrescos</label>
+        <input type="number" name="cr" placeholder="la cantidad de cajas de refrescos " required> <br>
+        <label for="">cantidad de botellas vendidas</label>
+        <input type="number" name="cv"placeholder="cantidad botellas vendidas" required><br>
+        <input type="submit" value="botellas disponibles">
+
+      </form>
+      
+      {% if mensaje%}
+        <h1>{{ mensaje }}</h1>
+
+        {% endif %}
+{% endblock %}

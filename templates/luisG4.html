@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+        <h1>gestion de tiempo en la fila de un banco<h1>
+        <form action="/ejercicio4" method="post">
+        <label for="">personas delante de la fila</label>
+        <input type="number" name="pf" placeholder="personas delante de la fila" required> <br>
+       <input type="submit" value="tiempo estimado de espera">
+
+      </form>
+      
+      {% if mensaje%}
+        <h1>{{ mensaje }}</h1>
+
+        {% endif %}
+{% endblock %}

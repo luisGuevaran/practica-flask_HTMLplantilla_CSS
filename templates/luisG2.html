@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+      <h1>peso de paquetes mensajeria</h1>
+      <form action="/ejercicio2" method="post">
+        <label for="">cantidad de paquetes tipo A</label>
+        <input type="number" name="pA" placeholder="cantidad de paquetes tipo A" required> <br>
+        <label for="">cantidad de paquetes tipo B</label>
+        <input type="number" name="pB"placeholder="cantidad de paquetes tipo B" required><br>
+        <input type="submit" value="calcular peso total">
+
+      </form>
+
+      {% if mensaje%}
+        <h1>{{ mensaje }}</h1>
+
+        {% endif %}
+
+   
+{% endblock %}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilo.css') }}">
+</head>
+<body>
+    <div class="container">
+          <div class="menu">
+            <a href="{{url_for('inicio') }}">Menu</a>
+            <a href="{{url_for('ejercicio1')}}">Ejercicio 1</a>
+            <a href="{{url_for('ejercicio2')}}">Ejercicio 2</a>
+            <a href="{{url_for('ejercicio3')}}">Ejercicio 3</a>
+            <a href="{{url_for('ejercicio4')}}">Ejercicio 4</a>
+            <a href="{{url_for('ejercicio5')}}">Ejercicio 5</a>
+        </div>
+        <div class="content">
+            {% block content %}
+
+
+            {% endblock %}
+        </div>
+
+    </div>
+</body>
+</html>

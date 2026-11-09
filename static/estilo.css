@@ -1,0 +1,123 @@
+.container {   
+  display: grid;   
+  grid-template-columns: 250px 1fr;   
+  background-color: #174574; /* Azul Oscuro */
+  padding: 10px; 
+  gap: 15px; 
+  min-height: 100vh; 
+}  
+
+.menu {   
+  display: flex;   
+  flex-direction: column;   
+  gap: 10px;   
+  background-color: #F0F4F8; /* Gris Azulado Claro */
+  padding: 15px; 
+  border-radius: 8px; /* Opcional: bordes suaves */
+}  
+
+.content {
+  background-color: #FFFFFF; /* Blanco */
+  padding: 20px;
+  border-radius: 8px; /* Opcional: bordes suaves */
+  color: #333333; /* Texto oscuro para que no sea negro puro */
+}
+
+.menu a:link, .menu a:visited {   
+  background-color: #2B6CB0; /* Azul Ejecutivo */
+  color: white;   
+  padding: 14px 25px;   
+  text-align: center;   
+  text-decoration: none;   
+  display: block; 
+  font-size: 16px; 
+  border-radius: 6px; /* Opcional: botones redondeados */
+  transition: background 0.2s ease; 
+}  
+
+.menu a:hover, .menu a:active {   
+  background-color: #3182CE; /* Azul Brillante */
+}
+
+/* CONTENEDOR DEL FORMULARIO (Se aplica al formulario dentro de .content) */
+.content form {
+  max-width: 460px; /* Tamaño elegante y contenido */
+  margin: 40px auto; /* Centrado con aire visual arriba y abajo */
+  display: flex;
+  flex-direction: column;
+}
+
+/* ETIQUETAS (LABELS) */
+.content form label {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #555E5A; /* Gris oliva profundo */
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* CAMPOS DE NÚMERO (INPUTS) */
+.content form input[type="number"] {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #D1DCD6; /* Línea inferior minimalista */
+  padding: 12px 4px;
+  font-size: 16px;
+  color: #161C1A;
+  font-family: inherit;
+  transition: all 0.25s ease-in-out;
+  box-sizing: border-box;
+  margin-bottom: 28px; /* Reemplaza el espacio del <br> de forma limpia */
+}
+
+/* Efecto al hacer clic o escribir en el campo */
+.content form input[type="number"]:focus {
+  outline: none;
+  border-bottom-color: #5E1A23; /* La línea cambia al color vino premium */
+  padding-left: 8px; /* Micro-desplazamiento elegante */
+}
+
+/* Estilo del texto de guía (Placeholder) */
+.content form input[type="number"]::placeholder {
+  color: #A3AFA9;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+/* Ocultar las flechas nativas del input number para que se vea más limpio */
+.content form input[type="number"]::-webkit-outer-spin-button,
+.content form input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* OCULTAR LOS <BR> VISUALMENTE */
+/* Al usar flex-direction: column, los <br> nativos pueden causar espaciados raros; los neutralizamos */
+.content form br {
+  display: none;
+}
+
+/* BOTÓN ENVIAR (INPUT SUBMIT) */
+.content form input[type="submit"] {
+  background-color: #161C1A; /* Botón negro puro contrastante */
+  color: #FBF9F4; /* Texto crema */
+  border: 1px solid #161C1A;
+  padding: 18px 24px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  -webkit-appearance: none; /* Remueve estilos por defecto en iOS/Safari */
+}
+
+/* HOVER DEL BOTÓN */
+.content form input[type="submit"]:hover {
+  background-color: #5E1A23; /* Cambia al tono guinda */
+  border-color: #5E1A23;
+  letter-spacing: 3.5px; /* Las letras se expanden sutilmente */
+}
