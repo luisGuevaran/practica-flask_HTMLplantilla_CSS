@@ -24,7 +24,7 @@
 }
 
 .menu a:link, .menu a:visited {   
-  background-color: #2B6CB0; /* Azul Ejecutivo */
+  background-color: #e90ec4; /* Azul Ejecutivo */
   color: white;   
   padding: 14px 25px;   
   text-align: center;   
@@ -36,7 +36,7 @@
 }  
 
 .menu a:hover, .menu a:active {   
-  background-color: #3182CE; /* Azul Brillante */
+  background-color: #e22f83; /* Azul Brillante */
 }
 
 /* CONTENEDOR DEL FORMULARIO (Se aplica al formulario dentro de .content) */
